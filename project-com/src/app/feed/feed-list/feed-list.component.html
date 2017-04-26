@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <a class="btn btn-success" [routerLink] = "['new']">New Project</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <pc-feed-item *ngFor="let project of projects; let i = index" [project]="project" [projectId] = "i"></pc-feed-item>
+    </ul>
+  </div>
+</div>
